@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "315781495677",
+    "firebase_url": "https://heaven-esports.firebaseio.com",
+    "project_id": "heaven-esports",
+    "storage_bucket": "heaven-esports.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315781495677:android:5d6eca05e5fa13f18d2a14",
+        "android_client_info": {
+          "package_name": "com.example.heavenesports"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315781495677-3vtc3fgbe66q17r2ht2rlqce3etkffs4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABWRskRKGZ_d427POgKP62uty41iY4YX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315781495677-3vtc3fgbe66q17r2ht2rlqce3etkffs4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

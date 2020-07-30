@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: "androidx.navigation.safeargs.kotlin"
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        applicationId "com.example.heavenesports"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.wear:wear:1.0.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //firebase
+    implementation 'com.google.firebase:firebase-core:17.4.4'
+    implementation 'com.google.firebase:firebase-analytics:17.4.4'
+
+    //Firebase Database
+    implementation 'com.google.firebase:firebase-firestore:21.5.0'
+    implementation 'com.google.firebase:firebase-firestore-ktx:21.5.0'
+
+    //Firebase Auth
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+
+    //Firebase Storage
+    implementation 'com.google.firebase:firebase-storage-ktx:19.1.1'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+
+    // FirebaseUI Storage only
+    implementation 'com.firebaseui:firebase-ui-storage:6.2.0'
+
+    //OkHttp
+    implementation("com.squareup.okhttp3:okhttp:4.8.0")
+
+    //GSON
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    //Shared Preferences
+    implementation 'androidx.preference:preference:1.1.1'
+
+    //Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:2.3.0"
+    implementation "androidx.navigation:navigation-ui-ktx:2.3.0"
+
+    //Circle image view
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    kapt 'com.github.bumptech.glide:compiler:4.11.0'
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+}
